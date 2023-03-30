@@ -5,6 +5,100 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.header{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px;
+}
+
+.header .left-links{
+  margin-right: auto;
+  margin-top: 0px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.header .right-links{
+  margin-left: auto;
+  margin-top: 0px;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.content{
+  display: flex;
+  flex: 1000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height:fit-content;
+  padding: 12px;
+  background-color:rgb(209, 203, 203);
+}
+
+.footer .left-links{
+  margin-right: auto;
+  margin-top: auto;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: max-content;
+  
+}
+
+.footer .right-links{
+  margin-left: auto;
+  margin-top: auto;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0px;
+  height: fit-content;
+  
+}
+
+.left-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.right-links{
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  gap: 12px;
+}
+
+a {
+  text-decoration: none;
+  font: 16px solid black;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+a:link{
+  color: rgb(71, 69, 69);
 }
 
 img {
@@ -15,6 +109,7 @@ button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
+  padding: 8px;
   background: #eee;
 }
 
