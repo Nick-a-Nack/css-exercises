@@ -11,18 +11,39 @@ body {
   color: #333;
   /* I'll give you this one for free lol */
   display: flex;
+  flex-direction: r;
   align-items: center;
   justify-content: center;
 }
 
 .modal {
+  display: flex;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
 
+.modal.info{
+  display: flex;
+}
+
+.top{
+  display: flex;
+  gap: 10px;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  
+}
+
+.header{
+  font-weight: bold;
+  font-size: medium;
+  margin-left: 0px;
+}
 .icon {
+
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -33,6 +54,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
+}
+
+.text{
+  font-size: 14px;
 }
 
 .close-button {
@@ -46,11 +72,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
 }
 
 button {
   padding: 8px 16px;
   border-radius: 8px;
+  margin: 10px 0px;
+
 }
 
 button.continue {
